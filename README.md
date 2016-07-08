@@ -1,5 +1,5 @@
 # A Scheme Interpreter
-![]()
+![](https://github.com/timkchan/scheme/blob/master/gp.gif?raw=true)
 
 ### 1. Introduction
 In this project, we will develop an interpreter for a subset of the Scheme language. As we proceed, we think about the issues that arise in the design of a programming language; many quirks of languages are byproducts of implementation decisions in interpreters and compilers.
@@ -92,8 +92,8 @@ scm> (eval (cons 'car '('(1 2))))
 
 ##### 2.5) Lambda expressions and procedure definition
  A begin expression is evaluated by evaluating all sub-expressions in order. The value of the begin expression is the value of the final sub-expression:
- ```lisp
- scm> (begin (+ 2 3) (+ 5 6))
+```lisp
+scm> (begin (+ 2 3) (+ 5 6))
 11
 scm> (define x (begin (display 3) (newline) (+ 2 3)))
 3
