@@ -6,7 +6,7 @@ def listchange(total, denos = [25, 10, 5, 1]):
 	elif total == denos[0]:
 		return [[denos[0]]] + listchange(total, denos[1:])
 	else:
-		return consall(denos[0], listchange(total - denos[0], denos))
+		return consall(denos[0], listchange(total - denos[0], denos)) + listchange(total, denos[1:])
 
 def consall(num, lsts):
 	for i in range(len(lsts)):
